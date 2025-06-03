@@ -1,3 +1,5 @@
+#Script that i had made to solve one laboratory. It can scan one list of IPs to make banner grabbing in a specific port.
+
 #!/bin/python3
 
 import socket
