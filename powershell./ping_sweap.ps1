@@ -6,7 +6,7 @@ if(!$ip){
 
     echo ""
     echo "Insira no primeiro argumento o IP do alvo."
-    echo "Exemplo: .\pingador_v2 192.168.0.1"
+    echo "Exemplo: .\ping_sweap 192.168.0"
 
 } else {
     echo "Varrendo sub-rede $ip ..."
