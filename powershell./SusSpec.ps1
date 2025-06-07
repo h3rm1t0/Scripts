@@ -96,11 +96,12 @@ $suslist = @()
 $processos = Get-Process                                                                    #Define os objetos de iteração como a variável $processos                                      
 
 foreach ($processo in $processos){
+    $n = 0
     foreach ($dir in $susdirs){
         try {
             if ($($processo.Path).Contains($dir)){
                 Write-Host "[!PROCESSO COM DIRETÓRIO SUSPEITO]  Nome:$($processo.ProcessName)  Diretório: $($processo.Path)"
-                $n = 0 + 1
+                $n =$n + 1
             }
         }catch{
           Write-Host "[!PROCESSO DE EXPRESSÃO COM VALOR NULO] Nome:$($processo.ProcessName)"
