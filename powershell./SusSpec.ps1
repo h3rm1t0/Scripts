@@ -139,7 +139,7 @@ foreach ($processo in $processos){
 
 Write-Host ""
 Write-Host "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
-Write-Host "+-+-+-+-+-+-+-+-+-+-+-+-+- LISTA DE PROCESSOS COM MAIS DE $crit ASPECTOS SUSPEITOS -+-+-+-+-+-+-+-+-+-+-+-+-+"
+Write-Host "+-+-+-+-+-+-+-+-+-+-+-+-+- LISTA DE PROCESSOS COM MAIS DE $crit ASPECTO(S) SUSPEITO(S) -+-+-+-+-+-+-+-+-+-+-+-+-+"
 Write-Host "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-"
 Write-Host ""
 
