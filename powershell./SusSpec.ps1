@@ -87,9 +87,22 @@ try{
         exit 1
 }
 
-$susdirs = @("Downloads", "System32", "system32", "osmar", "Program Files")               #Define a lista de diretórios que serão considerados suspeitos
-$susnames = @("svchost", "svch0st", "calc", "powershell", "chrome_updater")               #Define a lista de nomes de  suspeitos
-$susext = @("exe", "ps1", "bat", "py")                                                    #Define a lista de extensões suspeitas
+$susdirs = @("AppData", "ProgramData", "Temp",                 #Define a lista de diretórios que serão considerados suspeitos
+            "Downloads", "Desktop", "OneDrive",
+            "UserProfile", "Public", "LocalLow",
+            "System32", "SysWOW64",
+            "C$\\Windows\\", "C$\\Users\\")                    
+            
+$susnames = @("powershell", "powershell_ise", "pwsh",          #Define a lista de nomes de  suspeitos
+              "cmd", "mshta", "wscript", "cscript",
+              "wmic", "netsh", "curl", "wget",
+              "rundll32", "regsvr32", "tasklist",
+              "taskmgr", "svchost", "msiexec",
+              "mimikatz", "procdump", "rclone",
+              "winword", "excel", "powerpnt")
+
+$susext = @("exe", "ps1", "js", "vbs", "bat",                   #Define a lista de extensões suspeitas
+            "cmd", "dll", "scr", "jar")                                                  
 
 $suslist = @()
     
