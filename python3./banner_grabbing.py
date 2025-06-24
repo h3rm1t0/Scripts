@@ -10,7 +10,7 @@ if ((len(sys.argv) - 1) < 1):
 
         print ('[ATENÇÃO]: O script exige duas entradas.')
         print ('[FUNÇÃO]: Realiza banner grabbing em uma lista de IP em uma porta de interesse.')
-        print (f'[EXEMPLO]: ./interact.py <porta> <Caminho absoluto de uma litsa de IPs>')
+        print (f'[EXEMPLO]: ./interact.py <porta> <Caminho absoluto de uma lista de IPs>')
 
 else:
 
