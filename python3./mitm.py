@@ -1,5 +1,5 @@
 #The objective of this code is make a man in the middle position. It use scapy library to craft arp packets to poisoning the arp table of one target and recieve
-#the incoming traffic. Its efficient against not tunneled connections.
+#the incoming traffic.
 
 #!/bin/python3
 
@@ -66,6 +66,7 @@ def forward():
 
 def dis_forward():
     print('[DEBUG] Desabilitando emcaminhamento IP...')
+    os.system('echo 0 > /proc/sys/net/ipv4/ip_forward')
 
 def close():
     send(ARP(op=2,pdst=ip_router,psrc=ip_target,hwdst='ff:ff:ff:ff:ff:ff',hwsrc=mac_router), count=2)
